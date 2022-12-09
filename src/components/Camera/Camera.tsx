@@ -13,9 +13,13 @@ export const Camera = () => {
           }
         }}
         constraints={{
-          facingMode: 'user'
+          facingMode: {
+            exact: 'environment'
+          }
         }}
-        
+      // constraints={{
+      //   facingMode: 'user'
+      // }}
       />
       {data ?
         <a href={data}>{data}</a> : 'No results'

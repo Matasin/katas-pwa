@@ -4,12 +4,6 @@ export const Offline = () => {
   const [isOffline, setIsOffline] = useState(!navigator.onLine);
 
   useEffect(() => {
-    if (isOffline) {
-      return alert('You are offline');
-    }
-  }, [isOffline]);
-
-  useEffect(() => {
     window.addEventListener('online', () => setIsOffline(false));
     window.addEventListener('offline', () => setIsOffline(true));
 
