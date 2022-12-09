@@ -17,45 +17,10 @@ export const Camera = () => {
             exact: 'environment'
           }
         }}
-      // constraints={{
-      //   facingMode: 'user'
-      // }}
       />
       {data ?
-        <a href={data}>{data}</a> : 'No results'
+        <a className='row' href={data}>{data}</a> : 'No results'
       }
     </>
   );
 };
-
-// import { useState } from 'react';
-// // @ts-ignore
-// import QrReader from 'react-qr-scanner';
-
-// export const Camera = () => {
-//   const [state, setState] = useState<any>({
-//     delay: 100,
-//     result: 'No result'
-//   });
-
-//   const handleScan = (data: any) => {
-//     setState({
-//       result: data,
-//     });
-//   };
-//   const handleError = (err: any) => {
-//     console.error(err);
-//   };
-
-//   return (
-//     <div>
-//       <QrReader
-//         delay={state.delay}
-//         // style={previewStyle}
-//         onError={handleError}
-//         onScan={handleScan}
-//       />
-//       <p>{state.result}</p>
-//     </div>
-//   );
-// };
