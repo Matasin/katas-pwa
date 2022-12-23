@@ -1,16 +1,196 @@
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+
+  --bgcolor: #88b0ff;
+  --blackcolor: #333;
+  --barcolor: #2fa883;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .row {
-  border-bottom: 1px solid #fefefe;
+  position: relative;
   padding: 1.5em;
   text-align: left;
+  min-height: 90vh;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.row:last-of-type {
-  border-bottom: none;
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+  height: calc(100%);
+  background: var(--bgcolor);
+  color: var(--blackcolor);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.grid-item {
+  border-bottom: 1px solid var(--blackcolor);
+  border-right: 1px solid var(--blackcolor);
+  height: calc(100% - 1px);
+  text-align: center;
+}
+
+.vmarkerl,
+.vmarkerr,
+.hmarkert,
+.hmarkerb {
+  position: relative;
+  top: calc(100% - 10px);
+  left: 1vw;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  background: var(--bgcolor);
+}
+
+.vmarkerr {
+  left: calc(25vw - 43px);
+}
+
+.hmarkert {
+  top: 1vh;
+  left: -20px;
+}
+
+.hmarkerb {
+  top: calc(100% - 28px);
+  left: -20px;
+}
+
+.thack {
+  top: calc(1vh - 20px);
+}
+
+.hbar,
+.vbar {
+  position: relative;
+  top: 3vh;
+  left: -100px;
+  width: 200px;
+  height: 40px;
+  background: var(--bgcolor);
+  color: #fff;
+}
+.vbar {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  left: 12vw;
+  width: 40px;
+  height: 200px;
+  line-height: 200px;
+}
+
+.bg_hbarl,
+.bg_hbarr,
+.bg_vbart,
+.bg_vbarb {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 40px;
+  background: var(--blackcolor);
+  overflow: hidden;
+}
+.bg_hbarl {
+  border-radius: 20px 0 0 20px;
+}
+.bg_hbarr {
+  left: 100px;
+  border-radius: 0 20px 20px 0;
+}
+.bg_vbart,
+.bg_vbarb {
+  top: 0px;
+  left: 5px;
+  width: 30px;
+  height: 100px;
+}
+.bg_vbart {
+  border-radius: 20px 20px 0 0;
+}
+.bg_vbarb {
+  top: 100px;
+  border-radius: 0 0 20px 20px;
+}
+
+.hbarl,
+.hbarr,
+.vbart,
+.vbarb {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  line-height: 40px;
+  background: var(--barcolor);
+  transition: all 200ms;
+}
+
+.hbarl {
+  border-radius: 20px;
+}
+.hbarr {
+  left: 0px;
+  border-radius: 20px;
+}
+
+.vbart,
+.vbarb {
+  width: 20px;
+  height: 95px;
+}
+.vbart {
+  border-radius: 20px 20px 0 0;
+}
+.vbarb {
+  top: 0px;
+  border-radius: 0 0 20px 20px;
+}
+
+.hbartxt,
+.vbartxt {
+  position: absolute;
+  top: 5px;
+  left: 85px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+}
+.vbartxt {
+  position: absolute;
+  top: 85px;
+  left: 0px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
 }
