@@ -7,7 +7,7 @@ import './App.css';
 const App = () => {
   return (
     <div className='App'>
-      <div className='row'>
+      {/* <div className='row'>
         <ul>
           <li>[REACHABILITY] Application that knows we are online or not</li>
           <Offline />
@@ -24,7 +24,7 @@ const App = () => {
           <li>[DEVICE POSITION] Application that works as level meter</li>
           <Meter />
         </ul>
-      </div>
+      </div> */}
       <div className='row'>
         <ul>
           <li>[GEOLOCATION] The nearest PoI (point of interest) in your city (use map & geolocation)</li>
