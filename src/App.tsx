@@ -1,13 +1,14 @@
 import { Camera } from './components/Camera';
 import { Meter } from './components/Meter';
 import { Offline } from './components/Offline';
+import { Notes } from './components/Notes';
 
 import './App.css';
 
 const App = () => {
   return (
     <div className='App'>
-      {/* <div className='row'>
+      <div className='row'>
         <ul>
           <li>[REACHABILITY] Application that knows we are online or not</li>
           <Offline />
@@ -24,16 +25,16 @@ const App = () => {
           <li>[DEVICE POSITION] Application that works as level meter</li>
           <Meter />
         </ul>
-      </div> */}
-      <div className='row'>
-        <ul>
-          <li>[GEOLOCATION] The nearest PoI (point of interest) in your city (use map & geolocation)</li>
-          To do
-        </ul>
       </div>
       <div className='row'>
         <ul>
           <li>[OFFLINE] Notes app that allows creation of multiple notes (title, description) that are available even if we reenter the application</li>
+          <Notes />
+        </ul>
+      </div>
+      <div className='row'>
+        <ul>
+          <li>[GEOLOCATION] The nearest PoI (point of interest) in your city (use map & geolocation)</li>
           To do
         </ul>
       </div>

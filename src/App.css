@@ -194,3 +194,22 @@
   text-align: center;
   line-height: 30px;
 }
+
+.flex {
+  display: flex;
+  margin: 8px 0;
+  gap: 16px;
+}
+
+.flex button {
+  flex-basis: 15%;
+}
+.flex input {
+  flex: auto;
+}
+
+.input {
+  padding: 8px 16px;
+  border: 1px solid #2fa883;
+  border-radius: 4px;
+}
