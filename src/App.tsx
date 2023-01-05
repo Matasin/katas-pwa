@@ -2,6 +2,7 @@ import { Camera } from './components/Camera';
 import { Meter } from './components/Meter';
 import { Offline } from './components/Offline';
 import { Notes } from './components/Notes';
+import Map from './components/Map';
 
 import './App.css';
 
@@ -35,8 +36,8 @@ const App = () => {
       <div className='row'>
         <ul>
           <li>[GEOLOCATION] The nearest PoI (point of interest) in your city (use map & geolocation)</li>
-          To do
         </ul>
+        <Map />
       </div>
     </div>
   );
