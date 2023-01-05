@@ -58,7 +58,7 @@ export const Notes = () => {
   };
 
   return (
-    <div>
+    <div className='row'>
       <div className='flex'>
         <input
           name='title'

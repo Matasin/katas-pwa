@@ -14,8 +14,6 @@ export const Offline = () => {
   }, []);
 
   return (
-    <div>
-      <p>Currently you are: <b>{isOffline ? 'offline' : 'online'}</b></p>
-    </div>
+    <>status: <b>{isOffline ? 'offline' : 'online'}</b></>
   );
 };
