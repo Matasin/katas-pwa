@@ -7,7 +7,7 @@ export const Camera = () => {
   return (
     <>
       <QrReader
-        onResult={(result: any, error: any) => {
+        onResult={(result: any) => {
           if (!!result) {
             setData(result?.text);
           }
