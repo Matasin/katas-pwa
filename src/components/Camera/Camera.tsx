@@ -5,7 +5,7 @@ export const Camera = () => {
   const [data, setData] = useState(null);
 
   return (
-    <div className='row'>
+    <>
       <QrReader
         onResult={(result: any, error: any) => {
           if (!!result) {
@@ -21,6 +21,6 @@ export const Camera = () => {
       {data ?
         <a className='row' href={data}>{data}</a> : 'No results'
       }
-    </div>
+    </>
   );
 };
