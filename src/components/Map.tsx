@@ -91,7 +91,8 @@ const MapContainer = (props: IProvidedProps) => {
           position={{ lat: state.center.lat, lng: state.center.lng }}
           icon={{
             url: process.env.PUBLIC_URL + '/flag.png',
-          }} />
+          }}
+        />
       </GoogleMap>
     </div>
   );

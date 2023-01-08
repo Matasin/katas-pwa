@@ -1,5 +1,5 @@
 import { Camera } from '../Camera';
-import { Meter } from '../Meter';
+import { Sensors } from '../Sensors';
 import { Notes } from '../Notes';
 import Map from '../Map';
 
@@ -12,7 +12,7 @@ export const appRoutesConfig = [
   {
     path: '/meter',
     label: 'Meter',
-    Component: Meter,
+    Component: Sensors,
   },
   {
     path: '/notes',
